@@ -6,20 +6,16 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-/* style html retirer */
-div.keywords {
-    color:#cccccc;
-    font-size:1px;
+p.icon{
+    color: black!important; /*Titre des icône*/
+    font-size: medium;
 }
-div.keywords_2 {
-    color:#F3976C;
-}
-
 /*Images redimensionner*/
 img.img-responsive.portfolio-thumb {
     width: 270px;
     height: 270px;
     object-fit: cover;
+    margin: auto; /*alignement les pages mobiles et tablettes*/
 }
 img.img-responsive {
     width: 350px;
@@ -30,6 +26,7 @@ img.img-responsive {
 section .tc-white {
     color: white!important; /*Problème contraste texte fond*/
 }
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -156,7 +153,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: black; /*Problème de contraste*/
 }
 
 .d-bloc .a-btn:hover,
@@ -385,6 +382,11 @@ a:hover {
     z-index: 2;
 }
 
+.site-navigation.nav.navbar-nav a:hover { /*Changement d'état de la navigation*/
+    color: #F3976C!important;
+    text-shadow: 1px 1px #F3976C;
+}
+
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -499,7 +501,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 42px!important; /*Zone cliquable trop petite*/
 }
 
 .icon-lg {
@@ -815,12 +817,12 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: black; /*Problème de contraste*/
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: blue!important; /*Problème de contraste*/
     color: #FFFFFF!important;
 }
 
@@ -833,11 +835,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: blue!important; /*Problème de contraste*/
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: blue!important; /*Problème de contraste*/
 }
 
 .icon-dark-slate-blue {
