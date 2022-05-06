@@ -11,6 +11,11 @@ p.icon{
     font-size: medium;
 }
 /*Images redimensionner*/
+.navbar img {
+    width: 300px;
+    height: 70px;
+    object-fit: fill;
+}
 img.img-responsive.portfolio-thumb {
     width: 270px;
     height: 270px;
